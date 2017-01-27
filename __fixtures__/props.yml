@@ -1,0 +1,8 @@
+global:
+  category: 'web'
+  type: 'color'
+props:
+  foo:
+    value: '#ff0000'
+  baz:
+    value: '#0000ff'

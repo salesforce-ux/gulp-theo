@@ -1,0 +1,40 @@
+exports[`gulp-theo transforms Design Tokens as 1337v4r5 1`] = `
+"
+      😀a-1337:
+          \'token-a\': 😇(#FF0000)
+          \'token-a-a\': 😇(#FF0000 #FF0000)
+          \'token-a-b\': 😇(#FFFFFF)
+          \'token-same-name-as-alias\': 😇(foo)
+          \'sizing-a\': 😇(20px)
+          \'color-a\': 😇(rgb(186, 218, 85))
+          \'token-b\': 😇(#FFFFFF)
+    "
+`;
+
+exports[`gulp-theo transforms Design Tokens as Sass 1`] = `
+"
+  
+  $token-a: #FF0000;
+  
+  $token-a-a: #FF0000 #FF0000;
+  
+  $token-a-b: #FFFFFF;
+  
+  $token-same-name-as-alias: foo;
+  
+  $sizing-a: 20px;
+  
+  $color-a: rgb(186, 218, 85);
+  
+  $token-b: #FFFFFF;
+"
+`;
+
+exports[`gulp-theo transforms multiple files as Sass 1`] = `
+"
+  
+  $foo: rgb(255, 0, 0);
+  
+  $baz: rgb(0, 0, 255);
+"
+`;
