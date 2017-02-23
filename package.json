@@ -41,12 +41,12 @@
   "dependencies": {
     "gulp-util": "^3.0.8",
     "through2": "^2.0.3",
-    "theo": "^6.0.0-alpha",
+    "theo": "beta",
     "immutable": "^3.8.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "jest": "^18.1.0",
+    "jest": "^19.0.2",
     "standard": "^8.6.0"
   },
   "standard": {
