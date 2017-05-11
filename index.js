@@ -27,7 +27,7 @@ module.exports = Object.assign(
         theo.convert(opts)
           .then(res => {
             file.path = file.path.replace(/(json|yml)$/, options.format.type)
-            file.contents = new Buffer(res)
+            file.contents = Buffer.from(res)
             callback(null, file)
           })
           .catch(e => {
