@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/salesforce-ux/theo/master/assets/gulp-theo.png" alt="Theo logo" width="28" /> gulp-theo
+# <img src="https://raw.githubusercontent.com/salesforce-ux/theo/master/assets/theo.png" alt="Theo logo" width="28" /> gulp-theo
 
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
