@@ -54,6 +54,9 @@
       "describe",
       "it",
       "expect"
+    ],
+    "ignore": [
+      "example/dist/*"
     ]
   }
 }
