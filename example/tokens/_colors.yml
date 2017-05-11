@@ -1,0 +1,12 @@
+global:
+  category: 'web'
+  type: 'color'
+imports:
+  - _aliases.yml
+props:
+  brand:
+    value: '{!blue}'
+    comment: 'ACME Inc. brand color.'
+  primary:
+    value: '{!red}'
+    comment: 'Use the primary color on call-to-action buttons. e.g. "Save", "Log In"…'

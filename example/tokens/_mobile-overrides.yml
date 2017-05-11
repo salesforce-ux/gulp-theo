@@ -1,0 +1,6 @@
+global:
+  category: 'web'
+  type: 'mobile'
+props:
+  large:
+    value: '3rem'

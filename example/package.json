@@ -1,0 +1,16 @@
+{
+  "name": "gulp-theo-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp tokens:array && node index.js",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-theo": "^1.0.0-alpha.3"
+  }
+}
