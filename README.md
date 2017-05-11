@@ -190,6 +190,8 @@ module.exports = [
 
 ----
 
+Another example is available at <https://github.com/salesforce-ux/theo-example>.
+
 For any other options, refer to [Theo’s documentation](https://travis-ci.org/salesforce-ux/gulp-theo).
 
 [npm-url]: https://npmjs.org/package/gulp-theo
