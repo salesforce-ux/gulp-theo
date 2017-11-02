@@ -1,12 +1,11 @@
 {
   "name": "gulp-theo",
-  "version": "1.0.0-alpha.6",
+  "version": "1.0.0-beta.1",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "description":
-    "Gulp-theo is a plugin that transforms and formats Design Tokens",
+  "description": "Gulp-theo is a plugin that transforms and formats Design Tokens",
   "engines": {
     "node": ">=6.3.1"
   },
