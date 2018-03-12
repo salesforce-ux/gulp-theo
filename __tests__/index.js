@@ -3,14 +3,16 @@
 
 const gulp = require('gulp');
 const through = require('through2');
-const theo = require('../');
+const theo = require('theo')
+
+const gulpTheo = require('../');
 
 describe('gulp-theo', () => {
   it('transforms Design Tokens as Sass', done => {
     gulp
       .src('__fixtures__/a.json')
       .pipe(
-        theo.plugin({
+        gulpTheo({
           transform: {
             type: 'web'
           },
@@ -31,7 +33,7 @@ describe('gulp-theo', () => {
     gulp
       .src(['__fixtures__/a.json', '__fixtures__/props.yml'])
       .pipe(
-        theo.plugin({
+        gulpTheo({
           transform: {
             type: 'web'
           },
@@ -57,7 +59,7 @@ describe('gulp-theo', () => {
     gulp
       .src('__fixtures__/a.json')
       .pipe(
-        theo.plugin({
+        gulpTheo({
           transform: {
             type: undefined
           },
@@ -84,7 +86,7 @@ describe('gulp-theo', () => {
     gulp
       .src('__fixtures__/a.json')
       .pipe(
-        theo.plugin({
+        gulpTheo({
           transform: {
             type: 'web'
           },

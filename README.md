@@ -2,7 +2,6 @@
 
 [![Build Status][travis-image]][travis-url]
 [![NPM version][npm-image]][npm-url]
-[![Greenkeeper badge](https://badges.greenkeeper.io/salesforce-ux/gulp-theo.svg)](https://greenkeeper.io/)
 
 Theo is a [gulp](http://gulpjs.com) plugin for
 transforming and formatting [Design Tokens](https://npmjs.org/package/theo/#overview)
@@ -11,7 +10,7 @@ with [Theo](https://npmjs.org/package/theo).
 ## Install
 
 ```sh
-npm install gulp-theo --save-dev
+npm install theo gulp-theo --save-dev
 ```
 
 ## Usage
@@ -39,7 +38,7 @@ const theo = require('gulp-theo')
 // Transform design/props.yml to dist/props.scss:
 gulp.task('tokens:scss', () =>
   gulp.src('design/props.yml')
-    .pipe(theo.plugin({
+    .pipe(theo({
       transform: { type: 'web' },
       format: { type: 'scss' }
     }))
@@ -124,7 +123,8 @@ imports:
 ```js
 // gulpfile.js
 const gulp = require('gulp')
-const theo = require('gulp-theo')
+const gulpTheo = require('gulp-theo')
+const theo = require('theo')
 
 theo.registerFormat('array.js', `
   // Source: {{stem meta.file}}
@@ -143,7 +143,7 @@ gulp.task('tokens:array', () =>
     // Exclude partials (files prefixed with _)
     '!tokens/_*'
   ])
-  .pipe(theo.plugin(
+  .pipe(gulpTheo(
     {
       transform: {
         type: 'web'
