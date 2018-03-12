@@ -3,7 +3,7 @@
 
 const gulp = require('gulp');
 const through = require('through2');
-const theo = require('theo')
+const theo = require('theo');
 
 const gulpTheo = require('../');
 
