@@ -1,7 +1,7 @@
 // Copyright (c) 2015-present, salesforce.com, inc. All rights reserved
 // Licensed under BSD 3-Clause - see LICENSE.txt or git.io/sfdc-license
 
-const gutil = require('gulp-util');
+const PluginError = require('plugin-error');
 const theo = require('theo');
 const through = require('through2');
 
@@ -10,7 +10,7 @@ module.exports = function(options) {
     if (file.isStream()) {
       const err = this.emit(
         'error',
-        new gutil.PluginError('gulp-theo', 'Streaming not supported')
+        new PluginError('gulp-theo', 'Streaming not supported')
       );
       return callback(err);
     }
@@ -28,7 +28,7 @@ module.exports = function(options) {
         callback(null, file);
       })
       .catch(e => {
-        const err = new gutil.PluginError('gulp-theo', e, { trace: true });
+        const err = new PluginError('gulp-theo', e, { trace: true });
         callback(err, file);
       });
   });
