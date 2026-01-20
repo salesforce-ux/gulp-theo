@@ -38,7 +38,7 @@
   },
   "homepage": "https://github.com/salesforce-ux/gulp-theo",
   "dependencies": {
-    "through2": "^3.0.1"
+    "through2": "^4.0.2"
   },
   "peerDependencies": {
     "theo": "^8.1.3"
